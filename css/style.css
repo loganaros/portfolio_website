@@ -919,6 +919,14 @@ CENTER FILTER ABSOLUTE
   transform: translate(-77px);
 }
 
+.project-preview-text {
+  font-size: 22px;
+  line-height: 1.4;
+  font-weight: 400;
+  color: var(--text-color);
+  text-align: center;
+}
+
 .project-btn-container {
   display: flex;
   flex-direction: column;
