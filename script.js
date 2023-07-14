@@ -342,7 +342,7 @@ const aboutFilterClick = document.querySelector(`[data-filter="about"]`);
 const allFilterClick = document.querySelector(`[data-filter="all"]`);
 
 buttonSeeMyWork.addEventListener(`click`, function () {
-  projectFilterClick.click();
+  window.location = ('https://github.com/loganaros') ;
 });
 buttonLearnMore.addEventListener(`click`, function () {
   aboutFilterClick.click();
