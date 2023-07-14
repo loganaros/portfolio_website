@@ -1,0 +1,862 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Logan's Portfolio Website</title>
+    <meta
+      name="description"
+      content="Welcome to Logan's personal website - Software Engineer"
+    />
+    <meta name="robots" content="noodp,noydir" />
+    <meta
+      name="author"
+      content="Built by Logan Aros"
+    />
+
+    <link rel="icon" href="/img/moon-64x64.png" />
+    <link rel="apple-touch-icon" href="/img/moon-apple.png" />
+    <link rel="manifest" href="manifest.webmanifest" />
+
+    <!-- <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@RyBuilds" />
+    <meta name="twitter:title" content="RyOS - Ryan's Personal Site" />
+    <meta
+      name="twitter:description"
+      content="Welcome to Ryan's personal website - Software Engineer and Runner in London"
+    />
+    <meta
+      name="twitter:image"
+      content="https://personalsitestaticimage.s3.amazonaws.com/twitter-card.webp"
+    /> -->
+
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:site" content="@RyBuilds" />
+    <meta property="twitter:url" content="https://registe.me/" />
+    <meta property="twitter:title" content="RyOS - Ryan's Personal Site" />
+    <meta
+      property="twitter:description"
+      content="Welcome to Ryan's personal website - Software Engineer and Runner in London"
+    />
+    <!-- <meta
+      property="twitter:image"
+      content="https://personalsitestaticimage.s3.amazonaws.com/twitter-card.webp"
+    /> -->
+    <meta
+      property="twitter:image"
+      content="https://personalsitestaticimage.s3.amazonaws.com/ryos-card-image.png"
+    />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://registe.me/" />
+    <meta property="og:title" content="RyOS - Ryan's Personal Site" />
+    <meta
+      property="og:description"
+      content="Welcome to Ryan's personal website - Software Engineer and Runner in London"
+    />
+    <!-- <meta
+      property="og:image"
+      content="https://personalsitestaticimage.s3.amazonaws.com/twitter-card.webp"
+    /> -->
+    <meta
+      property="og:image"
+      content="https://personalsitestaticimage.s3.amazonaws.com/ryos-card-image.png"
+    />
+
+    <script
+      defer
+      data-domain="registe.me"
+      src="https://plausible.io/js/plausible.js"
+    ></script>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+
+    <script
+      defer
+      src="https://api.mapbox.com/mapbox-gl-js/v2.6.1/mapbox-gl.js"
+    ></script>
+    <link
+      href="https://api.mapbox.com/mapbox-gl-js/v2.6.1/mapbox-gl.css"
+      rel="stylesheet"
+    />
+
+    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/queries.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="toggle-container">
+        <div class="switch">
+          <div class="toggle">
+            <ion-icon class="toggle-icon sun" name="sunny"></ion-icon>
+            <ion-icon class="toggle-icon moon" name="moon"></ion-icon>
+          </div>
+        </div>
+      </div>
+      <nav class="filters-primary">
+        <div class="filters-container-main">
+          <ul class="filters-list">
+            <li class="filter active" data-filter="all">All</li>
+            <li class="filter" data-filter="about">About</li>
+            <li class="filter" data-filter="projects">Projects</li>
+            <li class="filter" data-filter="media">Media</li>
+            <li class="filter" data-filter="running">Running</li>
+          </ul>
+        </div>
+      </nav>
+      <a class="nav-btn" href="mailto:aroslogan@gmail.com">
+        <span class="nav-cta">Contact</span>
+      </a>
+    </header>
+    <div class="container">
+      <main>
+        <div class="grid">
+          <!-- INTRODUCTION -->
+          <div class="card card--intro" id="card--intro--all">
+            <h1 class="intro-heading">Logan Aros</h1>
+            <h1 class="intro-subheading">
+              Self-taught full stack developer.
+            </h1>
+            <div
+              class="intro-text-content intro-text--active"
+              id="intro-text-all"
+            >
+              <p class="intro-text">
+                Hello! My name is Logan and I am a self-taught <b class="bold-text">junior software developer</b>
+                looking to break into the professional world.
+              </p>
+            </div>
+            <div class="intro-text-content" id="intro-text-about">
+              <p class="intro-text intro-text--helper">
+                Hello! My name is Logan and I am a self-taught <b class="bold-text">junior software developer</b>
+                looking to break into the professional world.
+              </p>
+              <p
+                class="intro-text intro-text--helper intro-text--placeholder-margin"
+              >
+                I started my venture into technology at just 13, building my first gaming PC
+                and learning how to code in high school, taking every computer programming and
+                game design course that I could. I maintained over 115% in my classes by getting
+                extra credit for teaching the other kids how to code once I would finish my
+                projects early. I competed in national competitions through FBLA for computer
+                programming and cybersecurity, placing top 5.
+              </p>
+            </div>
+            <div class="intro-btn-container">
+              <button class="intro-btn intro-btn-primary" id="btn-see-my-work">
+                <span class="intro-cta intro-cta-primary">See my work</span>
+              </button>
+              <button class="intro-btn intro-btn-secondary" id="btn-learn-more">
+                <span class="intro-cta intro-cta-secondary">Learn more</span>
+              </button>
+            </div>
+          </div>
+          <!-- MAP -->
+          <div class="card--map" id="card--map--all" tabindex="-1">
+            <div id="map" tabindex="-1">
+              <!-- <button class="zoom-btn zoom-btn--out">
+                <ion-icon
+                  class="button-icon button-zoom--out"
+                  name="remove-outline"
+                ></ion-icon>
+              </button>
+              <button class="zoom-btn zoom-btn--in">
+                <ion-icon
+                  class="button-icon button-zoom--in"
+                  name="add-outline"
+                ></ion-icon>
+              </button> -->
+            </div>
+          </div>
+          <!-- PHOTOS -->
+          <div class="card--photos" id="card--photos--all">
+            <div class="slider">
+              <img
+                class="photo slide slide--1"
+                src="img/logan-aros.jpg"
+                alt="Photograph of Logan Aros"
+              />
+              <img
+                class="photo slide slide--2"
+                src="img/ryan-parker.webp"
+                alt="Photograph of Ryan Registe holding Parker the Dachshund"
+                loading="lazy"
+              />
+              <img
+                class="photo slide slide--3"
+                src="img/ryan-mmwdt.webp"
+                alt="Photograph of Ryan Registe smiling whilst walking in London"
+                loading="lazy"
+              />
+              <img
+                class="photo slide slide--4"
+                src="img/ryan-park.webp"
+                alt="Photograph of Ryan Registe focused while standing in a London park"
+                loading="lazy"
+              />
+              <img
+                class="photo slide slide--5"
+                src="img/ryan-running.webp"
+                alt="Photo of Ryan Registe smiling through the pain whilst running the Edinburgh Marathon"
+                loading="lazy"
+              />
+            </div>
+
+            <button class="slider-btn slider-btn--left">
+              <ion-icon
+                class="button-icon button-icon--left"
+                name="chevron-back-outline"
+              ></ion-icon>
+            </button>
+            <button class="slider-btn slider-btn--right">
+              <ion-icon
+                class="button-icon button-icon--right"
+                name="chevron-forward-outline"
+              ></ion-icon>
+            </button>
+            <div class="dots"></div>
+          </div>
+          <!-- RUNNING DASHBOARD -->
+          <div class="card card--running" id="card--running--all">
+            <h2
+              class="heading-secondary heading-secondary-mobile heading-secondary--more-margin"
+            >
+              Projects I've Worked On
+            </h2>
+            <nav class="filters-secondary">
+              <div class="filters-container-secondary">
+                <ul class="filter-list-secondary">
+                  <li class="filter-secondary" data-filter="Java">Java</li>
+                  <li class="filter-secondary" data-filter="Python">Python</li>
+                  <li class="filter-secondary" data-filter="C">C#</li>
+                  <li class="filter-secondary active" data-filter="2023">
+                    JS
+                  </li>
+                </ul>
+              </div>
+            </nav>
+            <div class="filter-secondary-content filter-content--Java">
+              <div class="statistics-container">
+                <div class="statistic-block">
+                  <p class="running-metric subheading">Project Name</p>
+                  <p class="running-statistic">Database</p>
+                </div>
+                <div class="statistic-block">
+                  <p class="running-metric subheading">Description</p>
+                  <p class="running-statistic">Used Java to create a database that takes user
+                    input to store and retrieve data, was used for my 2018 FBLA Nationals
+                    competition.
+                  </p>
+                </div>
+                <div class="statistic-block">
+                  <p class="running-metric subheading">Coding Stack</p>
+                  <p class="running-statistic">Java</p>
+                </div>
+              </div>
+            </div>
+            <div class="filter-secondary-content filter-content--Python">
+              <div class="statistics-container">
+                <div class="statistic-block">
+                  <p class="running-metric subheading">Project Name</p>
+                  <p class="running-statistic">Auto-Voter Bot</p>
+                </div>
+                <div class="statistic-block">
+                  <p class="running-metric subheading">Description</p>
+                  <p class="running-statistic">Used Python and SQL to create an auto voting
+                    bot that submitted votes at a regular interval on un-validated websites
+                  </p>
+                </div>
+                <div class="statistic-block">
+                  <p class="running-metric subheading">Coding Stack</p>
+                  <p class="running-statistic">Python, SQL</p>
+                </div>
+              </div>
+            </div>
+            <div class="filter-secondary-content filter-content--C">
+              <div class="statistics-container">
+                <div class="statistic-block">
+                  <p class="running-metric subheading">Project Name</p>
+                  <p class="running-statistic">Space Game</p>
+                </div>
+                <div class="statistic-block">
+                  <p class="running-metric subheading">Description</p>
+                  <p class="running-statistic">Used C# and Unity to create a video game that 
+                    allowed the player to go to different planets and had gravity and physics
+                    objects
+                  </p>
+                </div>
+                <div class="statistic-block">
+                  <p class="running-metric subheading">Coding Stack</p>
+                  <p class="running-statistic">C#</p>
+                </div>
+              </div>
+            </div>
+            <div
+              class="filter-secondary-content filter-content--2023 filter-content--active"
+            >
+              <div class="statistics-container">
+                <div class="statistic-block">
+                  <p class="running-metric subheading">Runs</p>
+                  <p class="running-statistic">8</p>
+                </div>
+                <div class="statistic-block">
+                  <p class="running-metric subheading">Distance</p>
+                  <p class="running-statistic">64.7 km</p>
+                </div>
+                <div class="statistic-block">
+                  <p class="running-metric subheading">Average Pace</p>
+                  <p class="running-statistic">6'02"</p>
+                </div>
+                <div class="statistic-block">
+                  <p class="running-metric subheading">Time</p>
+                  <p class="running-statistic">06:31:10</p>
+                </div>
+                <div class="statistic-block">
+                  <p class="running-metric subheading">Average Distance</p>
+                  <p class="running-statistic">8.0 km/run</p>
+                </div>
+                <div class="statistic-block">
+                  <p class="running-metric subheading">Elevation Gained</p>
+                  <p class="running-statistic">331 m</p>
+                </div>
+              </div>
+            </div>
+            <div class="filter-secondary-content filter-content--all">
+              <div class="statistics-container">
+                <div class="statistic-block">
+                  <p class="running-metric subheading">Runs</p>
+                  <p class="running-statistic">303</p>
+                </div>
+                <div class="statistic-block">
+                  <p class="running-metric subheading">Distance</p>
+                  <p class="running-statistic">2,544.7 km</p>
+                </div>
+                <div class="statistic-block">
+                  <p class="running-metric subheading">Average Pace</p>
+                  <p class="running-statistic">5'26"</p>
+                </div>
+                <div class="statistic-block">
+                  <p class="running-metric subheading">Time</p>
+                  <p class="running-statistic">230:35:56</p>
+                </div>
+                <div class="statistic-block">
+                  <p class="running-metric subheading">Average Distance</p>
+                  <p class="running-statistic">8.4 km/run</p>
+                </div>
+                <div class="statistic-block">
+                  <p class="running-metric subheading">Elevation Gained</p>
+                  <p class="running-statistic">8,980 m</p>
+                  <!-- Elevation: 971 -->
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- LEARNING PATH -->
+          <div class="card card--learning" id="card--learning--all">
+            <h2
+              class="heading-secondary heading-secondary-mobile heading-secondary--less-margin"
+            >
+              Languages I Know
+            </h2>
+            <div class="learning-container-mobile">
+              <div class="learning-container">
+                <div class="learning-header">
+                  <!-- ICON -->
+                  <div class="logo-container logo-helper logo-helper--margin">
+                    <img
+                      class="logo-vector"
+                      src="https://www.vectorlogo.zone/logos/w3_html5/w3_html5-icon.svg"
+                      alt="HTML Logo"
+                    />
+                    <img
+                      class="logo-vector"
+                      src="https://www.vectorlogo.zone/logos/w3_css/w3_css-icon.svg"
+                      alt="HTML Logo"
+                    />
+                    <!-- <ion-icon
+                      class="learning-logo logo-html"
+                      name="logo-html5"
+                    ></ion-icon>
+                    <ion-icon
+                      class="logo-css learning-logo"
+                      name="logo-css3"
+                    ></ion-icon> -->
+                  </div>
+                  <!-- ANCHORED TEXT -->
+                  <div class="learning-text-container">
+                    <a
+                      class="learning-course"
+                      href="https://www.udemy.com/course/design-and-develop-a-killer-website-with-html5-and-css3/"
+                      target="_blank"
+                      rel="noopener"
+                      >Build Responsive Websites with HTML and CSS</a
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <div class="learning-container">
+                <div class="learning-header">
+                  <!-- ICON -->
+                  <div class="logo-container logo-helper">
+                    <img
+                      class="logo-vector"
+                      src="https://upload.vectorlogo.zone/logos/javascript/images/239ec8a4-163e-4792-83b6-3f6d96911757.svg"
+                      alt="JavaScript Logo"
+                    />
+                  </div>
+                  <!-- ANCHORED TEXT -->
+                  <div class="learning-text-container">
+                    <a
+                      class="learning-course"
+                      href="https://www.udemy.com/course/the-complete-javascript-course/"
+                      target="_blank"
+                      rel="noopener"
+                      >The Complete JavaScript Course</a
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <div class="learning-container">
+                <div class="learning-header">
+                  <!-- ICON -->
+                  <div class="logo-container logo-helper">
+                    <img
+                      class="logo-vector"
+                      src="https://www.vectorlogo.zone/logos/reactjs/reactjs-icon.svg"
+                      alt="React Logo"
+                    />
+                  </div>
+                  <!-- ANCHORED TEXT -->
+                  <div class="learning-text-container">
+                    <a
+                      class="learning-course"
+                      href="https://www.udemy.com/course/react-the-complete-guide-incl-redux/"
+                      target="_blank"
+                      rel="noopener"
+                      >React: The Complete Guide</a
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <div class="learning-container">
+                <div class="learning-header">
+                  <!-- ICON -->
+                  <div class="logo-container logo-helper">
+                    <!-- <ion-icon
+                      class="learning-logo logo-nodejs"
+                      name="logo-nodejs"
+                    ></ion-icon> -->
+                    <img
+                      class="logo-vector"
+                      src="https://www.vectorlogo.zone/logos/nodejs/nodejs-icon.svg"
+                      alt="Node.js Logo"
+                    />
+                    <img
+                      class="logo-vector"
+                      src="https://www.vectorlogo.zone/logos/expressjs/expressjs-icon.svg"
+                      alt="Express Logo"
+                    />
+                    <img
+                      class="logo-vector"
+                      src="https://www.vectorlogo.zone/logos/mongodb/mongodb-icon.svg"
+                      alt="MongoDB Logo"
+                    />
+                  </div>
+                  <!-- ANCHORED TEXT -->
+                  <div class="learning-text-container">
+                    <a
+                      class="learning-course"
+                      href="https://www.udemy.com/course/nodejs-express-mongodb-bootcamp/"
+                      target="_blank"
+                      rel="noopener"
+                      >Node.js, Express and MongoDB</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- SPOTIFY -->
+          <div class="card card--spotify" id="card--spotify--all">
+            <div class="song-artwork">
+              <a id="spotify-preview" href="" target="_blank" rel="noopener">
+                <img
+                  id="spotify-artwork"
+                  src=""
+                  alt="artwork for most recently played song"
+                />
+              </a>
+            </div>
+            <img
+              class="spotify-logo"
+              src="img/spotify-logo.svg"
+              alt="The Spotify logo"
+            />
+            <div class="spotify-information">
+              <div class="playing-status-container">
+                <div class="animation-container">
+                  <div class="spotify-animation-1"></div>
+                  <div class="spotify-animation-2"></div>
+                  <div class="spotify-animation-3"></div>
+                </div>
+                <div class="playing-status">
+                  <p class="current-status">Last Played</p>
+                </div>
+              </div>
+              <div class="now-playing">
+                <a id="spotify-song" href="" target="_blank" rel="noopener"></a>
+              </div>
+              <div class="song-artist">
+                <p id="spotify-artist"></p>
+              </div>
+            </div>
+          </div>
+          <!-- RUNNING ROTATION -->
+          <div class="card card--rotation" id="card--rotation--all">
+            <h2 class="heading-secondary">Running Rotation</h2>
+            <div class="rotation-grid">
+              <div class="rotation-grid-left">
+                <div class="rotation-container">
+                  <p
+                    class="rotation-shoe rotation-shoe--1 rotation-shoe--active"
+                    data-shoe="1"
+                  >
+                    Half & Full Marathon
+                  </p>
+                  <p class="rotation-shoe rotation-shoe--2" data-shoe="2">
+                    5k and 10k Races
+                  </p>
+                  <p class="rotation-shoe rotation-shoe--3" data-shoe="3">
+                    Daily Training
+                  </p>
+                  <p class="rotation-shoe rotation-shoe--4" data-shoe="4">
+                    Recovery
+                  </p>
+                  <p class="rotation-shoe rotation-shoe--5" data-shoe="5">
+                    Trails
+                  </p>
+                </div>
+              </div>
+              <div class="rotation-grid-right">
+                <div
+                  class="rotation-shoe-image rotation-shoe-image--1 rotation-shoe-image--active"
+                >
+                  <img
+                    class="shoe-image"
+                    src="img/zoomx-vaporfly-side.webp"
+                    alt="Side view of the Nike Vaporfly in the sail and black limited edition colourway"
+                  />
+                </div>
+                <div class="rotation-shoe-image rotation-shoe-image--2">
+                  <img
+                    class="shoe-image"
+                    src="img/air-zoom-alphafly-side.webp"
+                    alt="Side view of the Nike Alphafly in the Eliud Kipchoge `1:59:40` record breaking white, pink, sail and black limited edition colourway"
+                  />
+                </div>
+                <div class="rotation-shoe-image rotation-shoe-image--3">
+                  <img
+                    class="shoe-image"
+                    src="img/zoom-fly-4-side.webp"
+                    alt="Side view of the Nike Zoom Fly 4 in the white, platinum, blue and lime colourway"
+                  />
+                </div>
+                <div class="rotation-shoe-image rotation-shoe-image--4">
+                  <img
+                    class="shoe-image"
+                    src="img/zoomx-invincible-run-side.webp"
+                    alt="Side view of the Nike Invincible Run in the white, platinum and chile colourway"
+                  />
+                </div>
+                <div class="rotation-shoe-image rotation-shoe-image--5">
+                  <img
+                    class="shoe-image"
+                    src="img/pegasus-trail-2-goretex-side.webp"
+                    alt="Side view of the Gortex Nike Pegasus Trail 2 in the triple black colourway"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- GITHUB -->
+          <div class="card card--github card--center" id="card--github--all">
+            <a
+              class="social-media-container"
+              href="https://github.com/RyBuilds"
+              aria-label="Ryan's github"
+              target="_blank"
+              rel="noopener"
+            ></a>
+            <ion-icon class="social-media-logo" name="logo-github"></ion-icon>
+            <a
+              class="social-media-btn"
+              href="https://github.com/RyBuilds"
+              target="_blank"
+              rel="noopener"
+            >
+              <ion-icon
+                class="social-media-arrow"
+                name="arrow-forward-outline"
+              ></ion-icon>
+            </a>
+          </div>
+          <!-- TWITTER -->
+          <div class="card card--twitter card--center" id="card--twitter--all">
+            <a
+              class="social-media-container"
+              href="https://twitter.com/RyBuilds"
+              aria-label="Ryan's twitter"
+              target="_blank"
+              rel="noopener"
+            ></a>
+            <ion-icon class="social-media-logo" name="logo-twitter"></ion-icon>
+            <a
+              class="social-media-btn"
+              href="https://twitter.com/RyBuilds"
+              target="_blank"
+              rel="noopener"
+            >
+              <ion-icon
+                class="social-media-arrow"
+                name="arrow-forward-outline"
+              ></ion-icon>
+            </a>
+          </div>
+          <!-- YOUTUBE -->
+          <div class="card card--youtube card--center" id="card--youtube--all">
+            <a
+              class="social-media-container"
+              href="https://www.youtube.com/channel/UCt3AhrDZhZ2G7zptjWWuonQ"
+              aria-label="Ryan's Youtube"
+              target="_blank"
+              rel="noopener"
+            ></a>
+            <ion-icon class="social-media-logo" name="logo-youtube"></ion-icon>
+            <a
+              class="social-media-btn"
+              href="https://www.youtube.com/channel/UCt3AhrDZhZ2G7zptjWWuonQ"
+              target="_blank"
+              rel="noopener"
+            >
+              <ion-icon
+                class="social-media-arrow"
+                name="arrow-forward-outline"
+              ></ion-icon>
+            </a>
+          </div>
+          <!-- LINKEDIN -->
+          <div
+            class="card card--linkedin card--center"
+            id="card--linkedin--all"
+          >
+            <a
+              class="social-media-container"
+              href="https://www.linkedin.com/in/ryanregiste"
+              aria-label="Ryan's linkedin"
+              target="_blank"
+              rel="noopener"
+            ></a>
+            <ion-icon class="social-media-logo" name="logo-linkedin"></ion-icon>
+            <a
+              class="social-media-btn"
+              href="https://www.linkedin.com/in/ryanregiste"
+              target="_blank"
+              rel="noopener"
+            >
+              <ion-icon
+                class="social-media-arrow"
+                name="arrow-forward-outline"
+              ></ion-icon>
+            </a>
+          </div>
+          <!-- INSTAGRAM -->
+          <div
+            class="card card--instagram card--center"
+            id="card--instagram--all"
+          >
+            <a
+              class="social-media-container"
+              href="https://www.instagram.com/ryanregiste/?hl=en-gb"
+              aria-label="Ryan's instagram"
+              target="_blank"
+              rel="noopener"
+            ></a>
+            <ion-icon
+              class="social-media-logo"
+              name="logo-instagram"
+            ></ion-icon>
+            <a
+              class="social-media-btn"
+              href="https://www.instagram.com/ryanregiste/?hl=en-gb"
+              target="_blank"
+              rel="noopener"
+            >
+              <ion-icon
+                class="social-media-arrow"
+                name="arrow-forward-outline"
+              ></ion-icon>
+            </a>
+          </div>
+          <!-- RYOS -->
+          <div
+            class="card card--ryos card--project-mobile"
+            id="card--ryos--all"
+          >
+            <div class="project-name-container">
+              <p class="subheading">PROJECT</p>
+              <h2 class="heading-secondary heading-secondary-helper">RyOS</h2>
+            </div>
+            <div class="project-builtwith-container">
+              <p class="subheading project--helper">BUILT WITH</p>
+              <div class="project-logo-cluster">
+                <div>
+                  <img
+                    class="logo-vector"
+                    src="https://upload.vectorlogo.zone/logos/javascript/images/239ec8a4-163e-4792-83b6-3f6d96911757.svg"
+                    alt="JavaScript Logo"
+                  />
+                </div>
+                <div>
+                  <img
+                    class="logo-vector"
+                    src="https://www.vectorlogo.zone/logos/w3_html5/w3_html5-icon.svg"
+                    alt="HTML Logo"
+                  />
+                </div>
+                <div>
+                  <img
+                    class="logo-vector"
+                    src="https://www.vectorlogo.zone/logos/w3_css/w3_css-icon.svg"
+                    alt="CSS Logo"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="project-preview-container">
+              <img
+                class="project-preview-image"
+                src="./img/ryos-card-image-white.png"
+                alt="Project preview image for RyOS"
+              />
+            </div>
+            <div class="project-btn-container">
+              <button
+                class="project-btn primary-project-btn"
+                id="btn-view-ryos"
+              >
+                <span class="project-cta primary-project-cta"
+                  >View project</span
+                >
+              </button>
+              <a
+                class="project-btn secondary-project-btn"
+                href="/projects/ryos"
+                target="_self"
+                rel="noopener"
+              >
+                <span class="project-cta secondary-project-cta"
+                  >About project</span
+                >
+              </a>
+            </div>
+          </div>
+          <!-- RECIPELY -->
+          <div
+            class="card card--recipely card--project-mobile"
+            id="card--recipely--all"
+          >
+            <div class="project-name-container">
+              <p class="subheading">PROJECT</p>
+              <h2 class="heading-secondary heading-secondary-helper">
+                Recipely
+              </h2>
+            </div>
+            <div class="project-builtwith-container">
+              <p class="subheading project--helper">BUILT WITH</p>
+              <div class="project-logo-cluster">
+                <div>
+                  <img
+                    class="logo-vector"
+                    src="https://www.vectorlogo.zone/logos/reactjs/reactjs-icon.svg"
+                    alt="React Logo"
+                  />
+                </div>
+                <div>
+                  <img
+                    class="logo-vector"
+                    src="https://www.vectorlogo.zone/logos/w3_html5/w3_html5-icon.svg"
+                    alt="HTML Logo"
+                  />
+                </div>
+                <div>
+                  <img
+                    class="logo-vector"
+                    src="https://www.vectorlogo.zone/logos/w3_css/w3_css-icon.svg"
+                    alt="CSS Logo"
+                  />
+                </div>
+                <div>
+                  <img
+                    class="logo-vector"
+                    src="https://www.vectorlogo.zone/logos/firebase/firebase-icon.svg"
+                    alt="Firebase Logo"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="project-preview-container"></div>
+            <div class="project-btn-container">
+              <a
+                class="project-btn primary-project-btn"
+                href="https://recipe.ly/"
+                target="_blank"
+                rel="noopener"
+              >
+                <span class="project-cta primary-project-cta"
+                  >View project</span
+                >
+              </a>
+              <a
+                class="project-btn secondary-project-btn"
+                href="/projects/recipely"
+                target="_self"
+                rel="noopener"
+              >
+                <span class="project-cta secondary-project-cta"
+                  >About project</span
+                >
+              </a>
+            </div>
+          </div>
+          <!-- DONATE -->
+          <div class="card card--donate" id="card--donate--all">
+            <h2 class="heading-secondary">Awards</h2>
+            <p class="donate-text">
+              Placed 4th in cybersecurity in state competition, went to nationals in FBLA
+              for computer programming and placed top 5.
+            </p>
+            <button class="donate-btn">
+              <span class="donate-cta" href="mailto:ryan@registe.me"
+                >Coming soon</span
+              >
+            </button>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
