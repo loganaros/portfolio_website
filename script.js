@@ -76,7 +76,7 @@ function setupMap(coords) {
 
   map.on('load', () => {
     // map.loadImage('img/memoji-map.png', (error, image) => {
-    map.loadImage('img/memoji-introduction.png', (error, image) => {
+    map.loadImage('img/logan-memoji.png', (error, image) => {
       if (error) throw error;
       map.addImage('memoji', image);
       map.addSource('point', {
