@@ -1,1 +1,1 @@
-RyOS - Ryan's Personal Site
+Logan's Personal website
