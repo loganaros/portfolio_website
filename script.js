@@ -308,12 +308,6 @@ filterContainerMain.addEventListener(`click`, function (event) {
   cardRyos.setAttribute(`id`, `card--ryos--${clicked.dataset.filter}`);
   cardRecipely.setAttribute(`id`, `card--recipely--${clicked.dataset.filter}`);
   cardDonate.setAttribute(`id`, `card--donate--${clicked.dataset.filter}`);
-  // CHANGE PHOTO ON FILTER CHANGE
-  if (clicked.dataset.filter === `running`) {
-    currentSlide = 1;
-    goToSlide(currentSlide);
-    activeDot(currentSlide);
-  }
   // CHANGE INTRO CARD ON FILTER CHANGE
   if (clicked.dataset.filter === `about`) {
     introTextContent.forEach(element =>
