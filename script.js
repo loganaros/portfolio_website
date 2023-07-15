@@ -310,7 +310,7 @@ filterContainerMain.addEventListener(`click`, function (event) {
   cardDonate.setAttribute(`id`, `card--donate--${clicked.dataset.filter}`);
   // CHANGE PHOTO ON FILTER CHANGE
   if (clicked.dataset.filter === `running`) {
-    currentSlide = 2;
+    currentSlide = 1;
     goToSlide(currentSlide);
     activeDot(currentSlide);
   }
