@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css?family=Staatliches&display=swap');
+
+body {
+	margin: 0px;
+    background-color: rgb(254, 255, 186);
+    overflow: scroll; 
+}
+
+#title {
+	font-family: 'Staatliches', cursive;
+	font-size: 60px;
+	text-align: center;
+	color: #cedde2;
+	-webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: rgb(248, 166, 255);
+}
+
+#canvas {
+    padding: 0;
+    margin: auto;
+    display: block;
+	background-color: #F0F0F0;
+	border-radius: 50%;
+
+}
+/* overflow hidden property refers to 
+hiding the content when it's too big to fit the screen */
+
+#lid {
+	padding: 0;
+    margin: auto;
+    display: block;
+}
+
+#bottom {
+	padding: 0;
+    margin: auto;
+    display: block;
+    position: relative;
+}
+
+#button {
+	padding: 0;
+    margin: auto;
+    position: absolute;
+}
+
+#out {
+	padding: 0;
+    margin: auto;
+    position: absolute;
+
+}
+
+#bottom-part {
+	padding: 0;
+    margin: auto;
+    display: block;
+	border: 2px solid #F0F0F0;
+}
