@@ -74,7 +74,7 @@ let fr;
 
 function setup() {
   var canvas = createCanvas(500, 500);
-  canvas.parent('card--spotify--all');
+  canvas.parent('sketch01');
   inc = 0.1;
   scl = 10;
   cols = floor(width / scl);
