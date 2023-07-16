@@ -73,7 +73,7 @@ let flowField;
 let fr;
 
 function setup() {
-  var canvas = createCanvas(1200, 500);
+  var canvas = createCanvas(556, 266);
   canvas.parent('sketch01');
   inc = 0.1;
   scl = 10;

@@ -643,10 +643,11 @@ CENTER FILTER ABSOLUTE
 
 .card--spotify {
   display: grid;
-  grid-template-columns: 202px 1fr;
+  /* grid-template-columns: 202px 1fr;
   grid-template-rows: repeat(3, 1fr);
-  column-gap: 64px;
+  column-gap: 64px; */
   /* column-gap: 56px; */
+  padding: 0px;
 }
 
 .song-artwork {
