@@ -73,7 +73,7 @@ let flowField;
 let fr;
 
 function setup() {
-  var canvas = createCanvas(750, 250);
+  var canvas = createCanvas(500, 500);
   canvas.parent('card--spotify--all');
   inc = 0.1;
   scl = 10;
