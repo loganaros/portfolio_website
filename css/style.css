@@ -198,12 +198,6 @@ CENTER FILTER ABSOLUTE
 /*              */
 /*              */
 
-#sketch01 {
-  float: left;
-     margin: 10px 10px 0 0;
-     width: 100%;
- }
- 
  #sketch01 canvas {
      width: 100% !important;
      height: auto !important;
