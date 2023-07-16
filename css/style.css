@@ -201,6 +201,7 @@ CENTER FILTER ABSOLUTE
  #sketch01 canvas {
      width: 100% !important;
      height: auto !important;
+     border-radius: 32px;
  }
 
 /*              */
