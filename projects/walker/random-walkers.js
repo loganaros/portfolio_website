@@ -74,7 +74,8 @@ let fr;
 
 function setup() {
   var canvas = createCanvas(500, 500);
-  canvas.parent('card--spotify--all')
+  canvas.parent('card--spotify--all');
+  resizeCanvas(canvas.parent.height, canvas.parent.width);
   inc = 0.1;
   scl = 10;
   cols = floor(width / scl);
